@@ -1,0 +1,98 @@
+<form class="formulario" onsubmit="guardarExperiencia(event)">
+
+    <label for="nombre">Nombre</label>
+
+    <input
+        type="text"
+        id="nombre"
+        placeholder="Escribe tu nombre"
+    >
+
+
+    <label for="destino">
+        Destino visitado
+    </label>
+
+    <select id="destino">
+
+        <option value="">
+            Selecciona un destino
+        </option>
+
+        <option value="Ciudad de México">
+            Ciudad de México
+        </option>
+
+        <option value="Oaxaca">
+            Oaxaca
+        </option>
+
+        <option value="Cancún">
+            Cancún
+        </option>
+
+        <option value="Guanajuato">
+            Guanajuato
+        </option>
+
+        <option value="San Miguel de Allende">
+            San Miguel de Allende
+        </option>
+
+        <option value="Puerto Vallarta">
+            Puerto Vallarta
+        </option>
+
+    </select>
+
+
+    <label>
+        Calificación
+    </label>
+
+    <div class="estrellas">
+
+        <span class="estrella"
+              onclick="seleccionarEstrella(1)">☆</span>
+
+        <span class="estrella"
+              onclick="seleccionarEstrella(2)">☆</span>
+
+        <span class="estrella"
+              onclick="seleccionarEstrella(3)">☆</span>
+
+        <span class="estrella"
+              onclick="seleccionarEstrella(4)">☆</span>
+
+        <span class="estrella"
+              onclick="seleccionarEstrella(5)">☆</span>
+
+    </div>
+
+
+    <label for="comentario">
+        Cuéntanos tu experiencia
+    </label>
+
+    <textarea
+        id="comentario"
+        placeholder="¿Qué te gustó del lugar? ¿Lo recomendarías?"
+    ></textarea>
+
+
+    <button type="submit">
+        Publicar experiencia
+    </button>
+
+</form>
+<section class="experiencias-ejemplo">
+
+    <h2>💬 Experiencias de viajeros</h2>
+
+    <div id="lista-experiencias">
+
+        <!-- Aquí aparecerán automáticamente -->
+
+    </div>
+
+</section>

@@ -1298,3 +1298,119 @@ footer {
     }
 
 }
+
+.categorias button {
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+
+    border-radius: 25px;
+
+    background: #2a9d8f;
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.categorias button:hover {
+    transform: translateY(-2px);
+    background: #264653;
+}
+
+.botones-destino {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.botones-destino button {
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #f8f6f1;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botones-destino button:hover {
+    transform: scale(1.1);
+}
+
+.estrellas {
+    display: flex;
+    gap: 5px;
+}
+
+.estrella {
+    font-size: 38px;
+    cursor: pointer;
+    color: #e9c46a;
+
+    transition: 0.2s;
+}
+
+.estrella:hover {
+    transform: scale(1.2);
+}
+
+.estrella.seleccionada {
+    color: #e9c46a;
+}
+
+
+.experiencia-card {
+    margin-bottom: 20px;
+}
+
+.estrellas-mostradas {
+    color: #e9c46a;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+.sin-favoritos,
+.sin-experiencias {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.btn-eliminar {
+    display: block;
+
+    margin: 15px auto 0;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    background: #f8f6f1;
+}
+
+.btn-eliminar:hover {
+    background: #e76f51;
+    color: white;
+}
+
+.destination-card {
+    transition: 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-6px);
+}
