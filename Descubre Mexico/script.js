@@ -186,7 +186,7 @@ function mostrarExperiencias() {
         contenedor.innerHTML = `
             <p class="sin-experiencias">
                 Todavía no hay experiencias publicadas.
-                ¡Sé la primera persona en compartir una! ✨
+                ¡Sé la primera persona en compartir una! 
             </p>
         `;
 
