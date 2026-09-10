@@ -595,3 +595,307 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+.destinos-header {
+    min-height: 500px;
+
+    background-image:
+        linear-gradient(
+            rgba(38, 70, 83, 0.72),
+            rgba(42, 157, 143, 0.72)
+        ),
+        url("img/portada-mexico.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+
+.destinos-title {
+    max-width: 850px;
+
+    margin: 90px auto 0;
+
+    padding: 0 20px;
+
+    text-align: center;
+}
+
+
+.destinos-title h1 {
+    font-size: 50px;
+
+    margin-bottom: 18px;
+}
+
+
+.destinos-title p:last-child {
+    font-size: 18px;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.destinos-intro {
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding-bottom: 35px;
+}
+
+
+.destinos-intro h2 {
+    font-size: 38px;
+
+    color: #264653;
+
+    margin-bottom: 12px;
+}
+
+
+.destinos-intro p:last-child {
+    color: #666;
+
+    font-size: 17px;
+}
+.categorias {
+    padding-top: 25px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.categoria {
+    background-color: white;
+
+    padding: 28px 20px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+
+.categoria:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+.categoria-icon {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+.categoria h3 {
+    color: #264653;
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+
+.categoria p {
+    color: #666;
+
+    font-size: 14px;
+}
+
+.todos-destinos {
+    background-color: #ffffff;
+}
+
+
+.destinos-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.destination-card {
+    background-color: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+.destination-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.13);
+}
+
+
+.destination-image {
+    height: 230px;
+
+    overflow: hidden;
+}
+
+
+.destination-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+
+.destination-card:hover .destination-image img {
+    transform: scale(1.08);
+}
+.destination-content {
+    padding: 25px;
+}
+
+
+.destination-content h3 {
+    color: #264653;
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+
+.destination-content p {
+    color: #666;
+
+    font-size: 15px;
+
+    margin-bottom: 18px;
+}
+
+.destination-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+
+    padding-top: 10px;
+
+    border-top: 1px solid #eeeeee;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+.destination-info span:last-child {
+    color: #e76f51;
+
+    font-weight: bold;
+}
+
+.destination-message {
+    text-align: center;
+
+    background-color: #f8f6f1;
+
+    padding: 90px 20px;
+}
+
+
+.destination-message h2 {
+    color: #264653;
+
+    font-size: 38px;
+
+    margin-bottom: 12px;
+}
+
+
+.destination-message p:not(.section-subtitle) {
+    color: #666;
+
+    font-size: 17px;
+
+    margin-bottom: 25px;
+}
+
+@media (max-width: 950px) {
+
+    .categorias {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .destinos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .destinos-title h1 {
+        font-size: 42px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .destinos-header {
+        min-height: 550px;
+    }
+
+    .destinos-title {
+        margin-top: 70px;
+    }
+
+    .destinos-title h1 {
+        font-size: 34px;
+    }
+
+    .destinos-title p:last-child {
+        font-size: 16px;
+    }
+
+    .categorias {
+        grid-template-columns: 1fr;
+    }
+
+    .destinos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-message h2 {
+        font-size: 30px;
+    }
+}
