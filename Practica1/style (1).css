@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+body{
+     background-color: #f8f7f7;
+     margin:0%
+}
+h1{ 
+    color: #54e0ff;
+    font-size: 9rem;
+    background-color: #999;
+    font-family: 'Comic Relief', cursive;
+    font-weight: 700;
+    font-style: italic;
+}
+h2,h3,h4,h5,h6{
+    color: #54e854;
+    font-size: 5rem;
+    background-color: #959;
+    font-family: 'Comic Relief', cursive;
+    font-weight: 800;
+    font-style: italic;
+}
+/*h3{
+    color: #5550ff54;
+    font-size: 3rem;
+    background-color: #666;
+    font-family: 'Comic Relief', cursive;
+    font-weight: 900;
+    font-style: italic;
+}
+h4{
+    color: #16c73d;
+    font-size: 2rem;
+    background-color: #97192a;
+    font-family: 'Comic Relief', cursive;
+    font-weight: 700;
+    font-style: italic;
+}
+h5{
+    color: #c0125b;
+    font-size: 1.5rem;
+    background-color: #000;
+    font-family: 'Comic Relief', cursive;
+    font-weight: 700;
+    font-style: italic;
+}
+h6{
+    color: #ccee0b;
+    font-size: 1rem;
+    background-color: #fa0404;
+    font-family: 'Comic Relief', cursive;
+    font-weight: 700;
+    font-style: italic;
+}*/
+p{
+    color: #fff;
+    font-size: 1rem;
+    background-color: #000;
+    font-family: 'Comic Relief', cursive;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.fondolila{
+    background-color: #9b59b6;
+    margin: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+   
+}
+.fondoblanco{
+    background-color: #ecf0f1;
+     margin: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
