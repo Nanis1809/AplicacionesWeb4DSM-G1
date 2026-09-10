@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    background-color: #ccc;
+}
+p{
+    font-size: 1.1rem;
+    color:#111;
+    line-height: 2rem;
+}
+h1{
+    font-size: 6rem;
+    color: #e409d9;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.leftdiv{
+    width: 30%;
+}
+.rightdiv{
+    width: 50%;
+}
+
