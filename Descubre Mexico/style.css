@@ -899,3 +899,402 @@ footer {
         font-size: 30px;
     }
 }
+
+.destino-header {
+    background-image:
+        linear-gradient(
+            rgba(38, 70, 83, 0.65),
+            rgba(42, 157, 143, 0.65)
+        ),
+        url("img/ciudad-de-mexico.jpg");
+
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    color: white;
+}
+
+
+.destino-portada {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.destino-portada h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.destino-portada p {
+    font-size: 22px;
+}
+
+.destino-info {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.destino-info h2,
+.destino-seccion h2,
+.experiencia-destino h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.destino-info > p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.datos-destino {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.datos-destino div {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.datos-destino h3 {
+    margin-bottom: 10px;
+}
+
+.destino-seccion {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 30px;
+}
+
+.destino-seccion p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.actividades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.actividad {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.actividad h3 {
+    margin-bottom: 10px;
+}
+
+.gastronomia {
+    text-align: center;
+}
+
+.comida-lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.comida-lista span {
+    background: #e9c46a;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.experiencia-destino {
+    text-align: center;
+    padding: 70px 30px;
+    background: #264653;
+    color: white;
+}
+
+.experiencia-destino button {
+    margin-top: 20px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #e9c46a;
+    color: #263238;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.experiencia-destino button:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 800px) {
+
+    .datos-destino {
+        grid-template-columns: 1fr;
+    }
+
+    .actividades {
+        grid-template-columns: 1fr;
+    }
+
+    .destino-portada h1 {
+        font-size: 40px;
+    }
+
+}
+/* Imágenes de cada destino */
+
+.destino-oaxaca {
+    background-image:
+        linear-gradient(
+            rgba(38, 70, 83, 0.65),
+            rgba(42, 157, 143, 0.65)
+        ),
+        url("img/oaxaca.jpg");
+}
+
+.destino-cancun {
+    background-image:
+        linear-gradient(
+            rgba(38, 70, 83, 0.55),
+            rgba(42, 157, 143, 0.55)
+        ),
+        url("img/cancun.jpg");
+}
+
+.destino-guanajuato {
+    background-image:
+        linear-gradient(
+            rgba(38, 70, 83, 0.65),
+            rgba(42, 157, 143, 0.65)
+        ),
+        url("img/guanajuato.jpg");
+}
+.destino-san-miguel {
+    background-image:
+        linear-gradient(
+            rgba(38, 70, 83, 0.65),
+            rgba(42, 157, 143, 0.65)
+        ),
+        url("img/san-miguel.jpg");
+}
+
+.destino-puerto {
+    background-image:
+        linear-gradient(
+            rgba(38, 70, 83, 0.55),
+            rgba(42, 157, 143, 0.55)
+        ),
+        url("img/puerto-vallarta.jpg");
+}
+
+.pagina-header {
+    background:
+        linear-gradient(
+            rgba(38, 70, 83, 0.85),
+            rgba(42, 157, 143, 0.85)
+        );
+
+    color: white;
+}
+
+.pagina-titulo {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.pagina-titulo h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.pagina-titulo p {
+    font-size: 20px;
+}
+
+.contenido-pagina {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.contenido-pagina h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contenido-pagina p {
+    line-height: 1.8;
+}
+
+.cultura-grid {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 30px 60px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.cultura-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.cultura-card h3 {
+    margin-bottom: 10px;
+}
+
+.formulario {
+    max-width: 650px;
+    margin: 40px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.formulario label {
+    margin-top: 18px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: Arial;
+}
+
+.formulario textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.formulario button {
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+
+    background: #e9c46a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    transform: scale(1.03);
+}
+
+.estrellas {
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #e9c46a;
+}
+
+.experiencias-ejemplo {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 30px 80px;
+    text-align: center;
+}
+
+.experiencia-card {
+    background: white;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.experiencia-card h3 {
+    color: #e9c46a;
+    font-size: 25px;
+}
+
+.favoritos-grid {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.favorito-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.favorito-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.favorito-card h3 {
+    margin-top: 15px;
+}
+
+.favorito-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2a9d8f;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    border-radius: 25px;
+
+    background: #2a9d8f;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+
+    .cultura-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .favoritos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-titulo h1 {
+        font-size: 35px;
+    }
+
+}
