@@ -1,0 +1,94 @@
+:root{
+    --bg-color: #f5f0ff;
+    --card-bg: #ffffff;
+    --text-color: #6c3483;
+    --accent-color: #6c3483;
+    --border-color: #e4d7f5;
+}
+
+body.modo_obscuro{
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #f8fafc;
+    --accent-color: #38bdf8;
+    --border-color: #334155;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+#MFHS-div1,
+#MFHS-div2,
+#MFHS-div3,
+#MFHS-div4,
+#MFHS-div5,
+#MFHS-div6,
+#MFHS-div7,
+#MFHS-div8{
+    background-color: #a569bd;
+    color: #ffffff;
+    padding: 25px 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#MFHS-div1:hover{ background-color: #8e44ad; transform: scale(1.05); }
+#MFHS-div2:hover{ background-color: #9b59b6; transform: scale(1.05); }
+#MFHS-div3:hover{ background-color: #7d3c98; transform: scale(1.05); }
+#MFHS-div4:hover{ background-color: #bb8fce; transform: scale(1.05); }
+#MFHS-div5:hover{ background-color: #af7ac5; transform: scale(1.05); }
+#MFHS-div6:hover{ background-color: #884ea0; transform: scale(1.05); }
+#MFHS-div7:hover{ background-color: #a569bd; transform: scale(1.05); }
+#MFHS-div8:hover{ background-color: #76448a; transform: scale(1.05); }
+
+#btn_cambio{
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#btn_cambio:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px){
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body{
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 350px){
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+}
