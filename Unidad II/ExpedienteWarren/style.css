@@ -1,0 +1,31 @@
+:root{
+    --fondo: #E8DCC5;
+    --cafe: #5e4639;
+    --negro: #171513;
+    --cafe-claro: #927451;
+}
+
+body{
+    background-color: var(--fondo);
+    color: var(--negro);
+    font-family: Georgia,serif;
+    margin: 0;
+    padding: 2rem;
+}
+
+header{
+    text-align: center;
+    background-color: var(--cafe);
+    color: var(--fondo);
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 2px solid var(--cafe-claro);
+}
+
+header h1{
+    font-size: 2.5rem;
+}
+
+header p{
+    color: var(--fondo)
+}
