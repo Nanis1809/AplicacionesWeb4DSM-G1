@@ -1,19 +1,46 @@
-:root{
+
+/* ========================================
+   1. COLORES Y CONFIGURACIÓN GENERAL
+======================================== */
+
+:root {
     --fondo: #E8DCC5;
     --cafe: #5e4639;
     --negro: #171513;
     --cafe-claro: #927451;
+    --blanco: #FFFCF5;
+    --panel: #F3E9D7;
 }
 
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     background-color: var(--fondo);
     color: var(--negro);
-    font-family: Georgia,serif;
+    font-family: "Source Serif 4", Georgia, serif;
     margin: 0;
     padding: 2rem;
+    line-height: 1.6;
+    overflow-wrap: break-word;
 }
 
-header{
+h1,
+h2,
+h3 {
+    font-family: "DM Serif Display", Georgia, serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ========================================
+   2. ENCABEZADO
+======================================== */
+
+header {
     text-align: center;
     background-color: var(--cafe);
     color: var(--fondo);
@@ -22,10 +49,483 @@ header{
     border: 2px solid var(--cafe-claro);
 }
 
-header h1{
+header h1 {
     font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-header p{
-    color: var(--fondo)
+header p {
+    color: var(--fondo);
+    margin-bottom: 0;
+}
+
+/* ========================================
+   3. MENÚ DE NAVEGACIÓN
+======================================== */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: var(--cafe);
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid var(--cafe-claro);
+}
+
+.menu a {
+    color: var(--fondo);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+    background-color: var(--cafe-claro);
+    color: var(--negro);
+}
+
+/* ========================================
+   4. PORTADA PRINCIPAL
+======================================== */
+
+.portada {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+    margin-top: 25px;
+    background-color: var(--panel);
+    border: 1px solid var(--cafe-claro);
+    border-radius: 8px;
+}
+
+.texto-portada {
+    flex: 1;
+    min-width: 0;
+}
+
+.etiqueta {
+    color: var(--cafe-claro);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.texto-portada h2 {
+    color: var(--cafe);
+    font-size: 2rem;
+}
+
+.texto-portada p {
+    line-height: 1.7;
+}
+
+.imagen-portada {
+    flex: 1;
+    min-width: 0;
+}
+
+.imagen-portada img {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: auto;
+    border: 4px solid var(--cafe-claro);
+    border-radius: 5px;
+    transition: transform 0.4s ease;
+}
+
+.imagen-portada img:hover {
+    transform: scale(1.03) translateY(-4px);
+}
+
+/* ========================================
+   5. BOTONES
+======================================== */
+
+.boton,
+.boton-detalles,
+.boton-enviar,
+.boton-limpiar {
+    display: inline-block;
+    background-color: var(--cafe);
+    color: var(--fondo);
+    padding: 12px 18px;
+    margin-top: 10px;
+    text-decoration: none;
+    border: 1px solid var(--cafe-claro);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton:hover,
+.boton:focus-visible,
+.boton-detalles:hover,
+.boton-enviar:hover {
+    background-color: var(--cafe-claro);
+    color: var(--negro);
+}
+
+.boton-secundario,
+.boton-limpiar {
+    background-color: #D8C7AD;
+    color: var(--negro);
+}
+
+.boton-secundario:hover,
+.boton-limpiar:hover {
+    background-color: #C5AF8D;
+    color: var(--negro);
+}
+
+/* ========================================
+   6. INTRODUCCIÓN
+======================================== */
+
+.introduccion {
+    max-width: 850px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.introduccion h2 {
+    color: var(--cafe);
+    font-size: 2rem;
+}
+
+.introduccion p {
+    line-height: 1.7;
+}
+
+/* ========================================
+   7. TARJETAS Y COLUMNAS BOOTSTRAP
+======================================== */
+
+.contenedor-expedientes,
+.contenedor-lugares,
+.contenedor-objetos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 35px 0;
+}
+
+.tarjeta-expediente,
+.tarjeta-lugar,
+.tarjeta-objeto {
+    min-width: 0;
+    background-color: var(--panel);
+    border: 1px solid var(--cafe-claro);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-expediente:hover,
+.tarjeta-lugar:hover,
+.tarjeta-objeto:hover {
+    transform: translateY(-4px);
+}
+
+.tarjeta-expediente img,
+.tarjeta-lugar img,
+.tarjeta-objeto img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.contenido-tarjeta {
+    padding: 20px;
+}
+
+.numero-expediente {
+    color: var(--cafe-claro);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contenido-tarjeta h3 {
+    color: var(--cafe);
+    font-size: 1.4rem;
+}
+
+.contenido-tarjeta p {
+    line-height: 1.6;
+}
+
+.boton-detalles {
+    margin-top: 5px;
+}
+
+.detalle-expediente {
+    display: none;
+    padding: 10px;
+    margin-top: 12px;
+    border-left: 3px solid var(--cafe-claro);
+    background-color: var(--fondo);
+}
+
+.detalle-expediente.visible {
+    display: block;
+}
+
+/* ========================================
+   8. FORMULARIO DE REGISTRO
+======================================== */
+
+.formulario-contenedor {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: var(--panel);
+    border: 1px solid var(--cafe-claro);
+    border-radius: 8px;
+}
+
+/* El propio formulario también tiene presentación */
+#formulario-caso {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 25px;
+    background-color: var(--panel);
+    border: 1px solid var(--cafe-claro);
+    border-radius: 8px;
+}
+
+#formulario-caso label {
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#formulario-caso input:not([type="checkbox"]),
+#formulario-caso select,
+#formulario-caso textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid var(--cafe-claro);
+    border-radius: 5px;
+    background-color: var(--blanco);
+    color: var(--negro);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1rem;
+}
+
+#formulario-caso textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#formulario-caso input:focus,
+#formulario-caso select:focus,
+#formulario-caso textarea:focus {
+    outline: 2px solid var(--cafe-claro);
+    outline-offset: 2px;
+}
+
+/* ========================================
+   9. CHECKBOX DE CONFIRMACIÓN
+======================================== */
+
+/* Bootstrap y los estilos generales no deben
+   estirar esta casilla a todo el ancho. */
+
+#formulario-caso .form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin: 15px 0;
+    padding-left: 0;
+}
+
+#formulario-caso input[type="checkbox"] {
+    appearance: auto;
+    -webkit-appearance: checkbox;
+    display: inline-block;
+    width: 18px !important;
+    min-width: 18px;
+    max-width: 18px;
+    height: 18px;
+    padding: 0 !important;
+    margin: 5px 0 0;
+    flex: 0 0 18px;
+    cursor: pointer;
+}
+
+#formulario-caso .form-check-label {
+    display: block;
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+/* ========================================
+   10. CONTADOR DE CARACTERES
+======================================== */
+
+#contador-descripcion {
+    color: var(--cafe-claro);
+    font-size: 0.9rem;
+    text-align: right;
+    margin: 5px 0 0;
+}
+
+/* ========================================
+   11. MENSAJES DE JAVASCRIPT
+======================================== */
+
+#mensaje-formulario {
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+#mensaje-formulario.exito {
+    color: #285B36;
+}
+
+#mensaje-formulario.error {
+    color: #8B1E1E;
+}
+
+/* El ID debe coincidir con el HTML */
+#resultado-caso {
+    margin-top: 20px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+#resultado-caso article {
+    padding: 18px;
+    background-color: var(--fondo);
+    border-left: 4px solid var(--cafe-claro);
+    border-radius: 4px;
+}
+
+#resultado-caso h3 {
+    color: var(--cafe);
+}
+
+/* ========================================
+   12. PIE DE PÁGINA
+======================================== */
+
+footer {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: var(--cafe);
+    color: var(--fondo);
+    text-align: center;
+    border-top: 3px solid var(--cafe-claro);
+}
+
+footer p {
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+/* ========================================
+   13. DISEÑO RESPONSIVO
+======================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    header {
+        padding: 22px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .menu {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .menu a {
+        padding: 8px 10px;
+        font-size: 0.95rem;
+    }
+
+    .portada {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .texto-portada,
+    .imagen-portada {
+        width: 100%;
+    }
+
+    .texto-portada h2,
+    .introduccion h2 {
+        font-size: 1.6rem;
+    }
+
+    .imagen-portada img {
+        width: 100%;
+    }
+
+    #formulario-caso {
+        padding: 18px;
+    }
+
+    .formulario-contenedor {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    .menu a {
+        font-size: 0.85rem;
+        padding: 7px;
+    }
+
+    #formulario-caso {
+        padding: 12px;
+    }
+
+    #formulario-caso .boton {
+        width: 100%;
+        text-align: center;
+    }
 }
