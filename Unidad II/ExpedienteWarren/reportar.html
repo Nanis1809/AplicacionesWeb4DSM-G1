@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reportar un caso | Expedientes Warren</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Expedientes Warren</h1>
+        <p>Archivos confidenciales de fenómenos paranormales</p>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="expedientes.html">Expedientes</a>
+        <a href="lugares.html">Lugares</a>
+        <a href="objetos.html">Objetos</a>
+        <a href="reportar.html">Reportar un caso</a>
+    </nav>
+
+    <section class="introduccion">
+        <p class="etiqueta">NUEVO REGISTRO</p>
+        <h2>Reportar un caso misterioso</h2>
+        <p>
+            Completa el siguiente formulario para crear un registro
+            ficticio. Los datos se utilizarán únicamente para mostrar
+            el resultado en esta página.
+        </p>
+    </section>
+
+    <section class="formulario-contenedor">
+
+        <form id="formulario-caso">
+
+            <label for="nombre">Nombre del investigador:</label>
+            <input type="text" id="nombre" name="nombre"
+                   placeholder="Escribe tu nombre" required minlength="2">
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo"
+                   placeholder="ejemplo@correo.com" required>
+
+            <label for="tipo">Tipo de caso:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="Lugar misterioso">Lugar misterioso</option>
+                <option value="Objeto extraño">Objeto extraño</option>
+                <option value="Presencia inexplicable">Presencia inexplicable</option>
+                <option value="Suceso extraño">Suceso extraño</option>
+            </select>
+
+            <label for="ubicacion">Ubicación del caso:</label>
+            <input type="text" id="ubicacion" name="ubicacion"
+                   placeholder="Ciudad o lugar ficticio" required>
+
+            <label for="fecha">Fecha aproximada:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="descripcion">Descripción de los hechos:</label>
+            <textarea id="descripcion" name="descripcion"
+                      rows="5" minlength="15" maxlength="500"
+                      placeholder="Describe lo sucedido (10 a 100caracteres)"
+                      required></textarea>
+
+            <label class="aceptacion">
+                <input type="checkbox" id="confirmacion" required>
+                Confirmo que este registro es parte de un proyecto ficticio.
+            </label>
+
+            <button type="submit" class="boton-enviar">
+                Registrar expediente
+            </button>
+
+            <button type="reset" class="boton-limpiar">
+                Limpiar formulario
+            </button>
+
+            <p id="mensaje-formulario" aria-live="polite"></p>
+
+        </form>
+
+        <section id="resultado-caso" class="resultado-caso">
+        </section>
+
+    </section>
+
+   <footer>
+        <p>Expedientes Warren | Temática cinematográfica.</p>
+        <p>Contenido ficticio de películas de terror.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
